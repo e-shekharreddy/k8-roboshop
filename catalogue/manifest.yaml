@@ -37,6 +37,7 @@ spec:
       container:
       - name: catalogue
         image: esrasd/catalogue:1.0.0
+        imagePullPolicy: Always # safe to pull everytime, there may be images with same version so
         resources:
           request:
             cpu: "100m"
@@ -52,7 +53,7 @@ spec:
             port: 8080
           failureThreshold: 2
           periodSeconds: 10
-          initialDelaySeconds: 5
+          initialDelaySeconds: 15
         livenessProbe:
           httpGet:
             path: /health
