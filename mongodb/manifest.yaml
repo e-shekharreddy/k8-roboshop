@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: mongodb
   namespace: roboshop
-  # these labels are replicaset labels
+  # these labels are replica set labels
   labels:
     project: roboshop
     tier: db
@@ -16,7 +16,7 @@ spec:
       project: roboshop
       tier: db
       component: mongodb
-  # this is pod , as we know pod is the subset of replicaset
+  # this is pod , as we know pod is the subset of replica set
   template:
     metadata:
       labels:
