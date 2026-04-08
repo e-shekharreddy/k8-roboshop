@@ -10,7 +10,7 @@ metadata:
 data:
   CART_ENDPOINNT: "cart:8080"
   DB_HOST: "mysql"
-  
+
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -41,11 +41,11 @@ spec:
         imagePullPolicy: Always # safe to pull everytime, there may be images with same version so
         resources:
           requests:
-            cpu: "100m"
-            memory: "128Mi"
+            cpu: "150m"
+            memory: "256Mi"
           limits:
-            cpu: "100m"
-            memory: "128Mi"
+            cpu: "150m"
+            memory: "256Mi"
         readinessProbe:
           # httpGet:
           #   path: /health
