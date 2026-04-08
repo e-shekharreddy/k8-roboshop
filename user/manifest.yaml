@@ -9,9 +9,9 @@ metadata:
     component: user
 data:
   MONGO: "true"
-  REDIS_URL: "redis:6379"
+  REDIS_URL: "redis://redis:6379"
   MONGO_URL: "mongodb:27017/users"
-  
+
 ---
 apiVersion: apps/v1
 kind: Deployment
