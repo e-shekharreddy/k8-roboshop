@@ -61,7 +61,7 @@ spec:
           failureThreshold: 2
           periodSeconds: 10
         envFrom:
-        - configMap:
+        - configMapRef:
           name: catalogue
 ---
 apiVersion: v1
