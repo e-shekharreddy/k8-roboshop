@@ -39,7 +39,7 @@ spec:
         image: esrasd/catalogue:1.0.0
         imagePullPolicy: Always # safe to pull everytime, there may be images with same version so
         resources:
-          request:
+          requests:
             cpu: "100m"
             memory: "128Mi"
           limits:
