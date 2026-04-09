@@ -43,7 +43,6 @@ spec:
       - name: payment
         image: esrasd/payment:1.3.0
         imagePullPolicy: Always # safe to pull everytime, there may be images with same version so
-        command: ["sleep", "2000"]
         resources:
           requests:
             cpu: "100m"
