@@ -41,7 +41,7 @@ spec:
         imagePullPolicy: Always # safe to pull everytime, there may be images with same version so
         resources:
           requests:
-            cpu: "300m"
+            cpu: "250m"
             memory: "256Mi"
           limits:
             cpu: "300m"
